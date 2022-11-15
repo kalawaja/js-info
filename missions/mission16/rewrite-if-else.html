@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Rewrite 'if' and 'else' into '?'</title>
+</head>
+<body>
+    <script>
+        "use strict";
+        /*
+        let mesaj;
+
+        if (giris == 'Çalışan') {
+        mesaj = 'Merhaba';
+        } else if (giris == 'Yönetici') {
+        mesaj = 'Sana da merhaba patron';
+        } else if (giris == '') {
+        mesaj = 'Giriş yasak';
+        } else {
+        mesaj = '';
+        }
+        */
+        let entry = prompt('What is your status?', '');
+        let message = (entry == 'Employee') ? 'Hello!' :
+            (entry == 'Admin') ? 'Hello to you, boss!' :
+            (entry != 'Employee' | 'Admin') ? 'No entry!' :
+            '';
+        alert(message);  
+    </script>
+    <h3>Rewrite 'if' and 'else' into '?'</h3>
+</body>
+</html>
