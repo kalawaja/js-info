@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Logical Operators : Check the Login</title>
+</head>
+<body>
+    <script>
+        "use strict";
+
+        let userName = prompt('Who\'s there?', '');
+
+        if (userName == 'Admin') {
+
+            let pass = prompt('Password?', '');
+
+            if (pass == 'TheMaster') {
+                alert('Welcome!');
+            } else if (pass == '' || pass == null) {
+                alert('Canceled');
+            } else {
+                alert('Wrong password');
+            }
+            
+        } else if (userName == '' || userName == null) {
+            alert('Canceled');
+        } else {
+            alert('I don\'t know you');
+        }
+    </script>
+    <h3>Logical Operators : Check the Login</h3>
+</body>
+</html>
