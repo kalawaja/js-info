@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Loops : list-primes</title>
+</head>
+<body>
+    <script>
+        "use strict";
+        let n = 10;
+        nextPrime:
+        for (let i = 2; i <= 10; i++) {
+            
+            for (let j = 2; j < i; j++) {
+                if (i % j == 0) continue nextPrime;
+            }
+            
+            alert(i);
+        }
+    </script>
+    <h3>Loops : list-primes</h3>
+</body>
+</html>
