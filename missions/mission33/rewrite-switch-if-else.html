@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Switch : rewrite switch if-else</title>
+</head>
+<body>
+    <script>
+        "use strict";
+        /*
+        1. with switch
+
+        switch (browser) {
+            case 'Edge':
+                alert("You are using Edge browser");
+                break;
+
+            case 'Chrome':
+            case 'Firefox':
+            case 'Safari':
+            case 'Opera':
+                alert("Okay, we support these");
+                break;
+
+            default:
+                alert("I hope your page looks good");
+        }
+
+        */
+        
+        // 2. with if-else
+
+        let browser = prompt("Which browser do you use?", "");
+        
+        if (browser === "Edge") {
+            alert("You are using Edge browser");
+
+        } else if (browser === "Chrome" 
+                || browser === "Firefox" 
+                || browser === "Safari" 
+                || browser === "Opera") {
+            alert("Okay, we support these");
+
+        } else {
+            alert("I hope your page looks good");
+
+        }
+    </script>
+    <h3>Loops : rewrite switch if-else</h3>
+</body>
+</html>
