@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Switch : if-else-required</title>
+</head>
+<body>
+    <script>
+        "use strict";
+
+        /*
+        // Solution 1
+
+        function controlAge(age) {
+            if (age > 18) {
+                return true;
+            } else {
+                //...
+                return confirm('Did your parents give permission?');
+            }
+        }
+        */
+
+        // Solution 2 (There is no difference in the output with solution 1!)
+
+        function controlAge(age) {
+            if (age > 18) {
+                return true;
+            }
+            // ...
+            return confirm('Did your parents give permission?');
+        }
+    </script>
+    <h3>Loops : if-else-required</h3>
+</body>
+</html>
