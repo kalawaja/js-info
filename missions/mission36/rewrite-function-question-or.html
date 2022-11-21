@@ -11,17 +11,25 @@
         /*
         // Solution 1
 
-        function control
-        */
-
-        // Solution 2 (There is no difference in the output with solution 1!)
-
-        function controlAge(age) {
+        function checkAge(age) {
             if (age > 18) {
                 return true;
+            } else {
+                return confirm('Did your parents give permission?');
             }
-            // ...
-            return confirm('Did your parents give permission?');
+        }
+        */
+
+        // Solution 2 (There is no difference in the output with solution 1)
+
+        function checkAge(age) {
+            return (age > 18) ? true : confirm('Did your parents give permission?');
+        }
+
+        // Solution 3 (There is no difference in the output with solution 1,2)
+        
+        function checkAge(age) {
+            return (age > 18) || confirm('Did your parents give permission?');
         }
     </script>
     <h3>Loops : rewrite-function-question-or</h3>
