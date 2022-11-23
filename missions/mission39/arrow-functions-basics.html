@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Arrow Functions Basics</title>
+</head>
+<body>
+    <script>
+        "use strict";
+
+        /*
+        1. Solution
+
+        function ask(question, yes, no) {
+            if (confirm(question)) yes()
+            else no();
+        }
+
+        ask(
+            "Do you agree?",
+            function() { alert("You accepted"); },
+            function() { alert("You stopped from running"); }
+        );
+
+        */
+
+        // 2. Solution (with =>)
+
+        function ask(question, yes, no) {
+            if (confirm(question)) yes()
+            else no();
+        }
+
+        ask(
+            "Do yo agree?",
+            () => alert("You accepted"),
+            () => alert("You stopped from running")
+        );
+    </script>
+    <h3>Arrow Functions Basics</h3>
+</body>
+</html>
