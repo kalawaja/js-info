@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Testing Mocha</title>
+</head>
+<body>
+    <script>
+        "use strict";
+        describe("Raises x to power n", function() {
+            it("The first power of 5 is 5" ,function() {
+                assert.equal(top(5, 1), 5); 
+            });
+
+            //Mocha will run only this block
+            it.only("The second power of 5 is 25", function() {
+                assert.equal(top(5, 2), 25);
+            });
+
+            it("The third power of 5 is 125", function() {
+                assert.equal(top(5, 3), 125);
+            });
+        });
+    </script>
+    <h3>Testing Mocha</h3>
+</body>
+</html>
