@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Coding Style</title>
+</head>
+<body>
+    <script>
+        "use strict";
+
+        /*
+        1. Bad Style
+
+        function ust(x,n)
+        {
+        let sonuc=1;
+        for(let i=0;i<=n;i++) {sonuc*=x;}
+        return sonuc;
+        }
+
+        let x=prompt("x?",''), n=prompt("n?",'')
+        if (n<=0)
+        {
+        alert(`${n} üssü alınamadı, kullandığınız sayı 0'dan küçük olamaz. Lütfen doğal sayıları kullanınız.`);
+        }
+        else
+        {
+        alert(ust(x,n))
+        }
+
+        */
+
+        // 2. Good Style
+
+        function top(x, n) {
+            let result = 1;
+
+            for (let i = 0; i < n; i++) {
+                result *= x;
+            }
+
+            return result;
+        }
+
+        let x = prompt("x?", "");
+        let n = prompt("n?", "");
+
+        if (n < 0) {
+            alert( `Failed to exponentiate ${n}, 
+                the number you are using cannot be less than 0. 
+                Please use natural numbers. `);
+        } else {
+            alert( top(x, n) );
+        }
+    </script>
+    <h3>Coding Style</h3>
+</body>
+</html>
