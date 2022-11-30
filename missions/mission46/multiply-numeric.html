@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Object Basics - multiply-numeric</title>
+</head>
+<body>
+    <script>
+        "use strict";
+        let size = {
+            width: 200,
+            height: 300,
+            title: "Size",
+        };
+
+        function multiplyByTwo(size) {
+            for (key in size) {
+                if (typeof size[key] == 'number') {
+                    size[key] *= 2;
+                } 
+            }
+        }
+    </script>
+    <h3>Object Basics - multiply-numeric</h3>
+</body>
+</html>
