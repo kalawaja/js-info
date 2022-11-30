@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Object Basics</title>
+</head>
+<body>
+    <script>
+        "use strict";
+        let user = {};
+        user.name = "Jon";
+        user["last name"] = "Snow";
+
+        user.name = "Robb";
+        delete user["last name"];
+
+        alert(user.name);           //Robb
+    </script>
+    <h3>Object Basics</h3>
+</body>
+</html>
