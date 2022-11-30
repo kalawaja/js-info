@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Object Basics - is-empty</title>
+</head>
+<body>
+    <script>
+        "use strict";
+
+        let obj = {};
+
+        function isEmpty(obj) {
+            for (let key in obj) {
+                return false;
+            }
+            return true;
+        }
+
+        alert ( isEmpty(obj) );
+    </script>
+    <h3>Object Basics - is-empty</h3>
+</body>
+</html>
