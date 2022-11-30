@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Object Basics - sum-object</title>
+</head>
+<body>
+    <script>
+        "use strict";
+        let salaries = {
+            John: 100,
+            Arya: 160,
+            Bran: 130,
+        };
+
+        let total = 0;
+        for (let key in salaries) {
+            total += salaries[key];
+        }
+
+        alert(total);
+    </script>
+    <h3>Object Basics - sum-object</h3>
+</body>
+</html>
