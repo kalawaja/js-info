@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Object Basics - const-object</title>
+</head>
+<body>
+    <script>
+        "use strict";
+        const user = {
+            name: "John"
+        };
+
+        user.name = "Robb";
+        alert(user.name);       //works
+
+        user = 123;             //does not works
+    </script>
+    <h3>Object Basics - const-object</h3>
+</body>
+</html>
