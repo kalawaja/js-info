@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Object Basics - why-this</title>
+</head>
+<body>
+    <script>
+        "use strict";
+        
+        let obj, method;
+
+        obj = {
+            sayHello: function() { alert(this); }
+        };
+
+        obj.sayHello();                     //[object Object]
+        (obj.sayHello)();                   //[object Object]
+        (method = obj.sayHello)();          //undefined
+        (obj.sayHello || obj.sayGoodbye)(); //undefined
+    </script>
+    <h3>Object Basics - why-this</h3>
+</body>
+</html>
