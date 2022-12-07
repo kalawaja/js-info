@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Object Basics - object-property-this</title>
+</head>
+<body>
+    <script>
+        "use strict";
+
+        function makeUser() {
+            return {
+                name: "Jon",
+                ref() {
+                    return this;
+                }
+            };
+        }
+        let user = makeUser();
+
+        alert( user.ref().name );
+    </script>
+    <h3>Object Basics - object-property-this</h3>
+</body>
+</html>
